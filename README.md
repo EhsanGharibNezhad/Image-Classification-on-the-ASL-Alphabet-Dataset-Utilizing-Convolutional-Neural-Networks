@@ -102,8 +102,8 @@ We need to first convert RGB images into 3d arrays with [height, width, channel]
 
 All these image processing tools are embedded into the following function in the main code:
 
-`def read_npArray_resize_image(image_path, x_pixel, y_pixel):`\
-&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;`return skimage.transform.resize(np.asarray(Image.open(image_path)), (x_pixel, y_pixel, 1))`
+<img width="1118" alt="image" src="https://user-images.githubusercontent.com/22139918/141200677-f5744261-b05a-4846-aacc-23a4bd45b080.png">
+
 
 --- 
 
