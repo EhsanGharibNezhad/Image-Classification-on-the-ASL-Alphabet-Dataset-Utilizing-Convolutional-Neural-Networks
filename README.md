@@ -108,6 +108,10 @@ All these image processing tools are embedded into the following function in the
 --- 
 
 # <a id = 'CNNs'>Convolutional Neural Networks (CNNs)</b></a>
+Convolutional Neural Networks consists of a number of neurons that are fed with input vectorized and resized image data, and includes weights and biases.  Neurons are trainable and learnable because each of them performs a non-linear operation on the input arrays through ReLU function [Ref](https://cs231n.github.io/convolutional-networks/#overview). ReLU (Rectified Linear Unit) is ideal for this deep learning purpose because Rectified Linear Unit takes less comutational time to be trained and hence this will reduce the optimization time of the neural network in the gradient descent surface [Ref](https://www.mygreatlearning.com/blog/relu-activation-function/).  
+
+The whole network still expresses a single differentiable score function: from the raw image pixels on one end to class scores at the other. And they still have a loss function (e.g. SVM/Softmax) on the last (fully-connected) layer and all the tips/tricks we developed for learning regular Neural Networks still apply.
+
 
 ### 1. <a id = 'X'>X</b></a>
 
