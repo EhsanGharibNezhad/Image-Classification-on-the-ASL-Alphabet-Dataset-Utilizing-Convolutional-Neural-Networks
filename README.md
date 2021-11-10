@@ -86,9 +86,27 @@ Different features of CNNs architectures such as filters, hidden layers, and num
 
 ---
 
+# <a id = 'ASLdataset'>American Sign Language Image Dataset</b></a>
+The image data set is taken from [Kaggle database](https://www.kaggle.com/grassknoted/asl-alphabet) and consists of 87,000 images in 29 folders which represent 26 American sign language classes (e.g., A, B, ..., Z) and 3 classes for SPACE, DELETE and NOTHING.
 
 # <a id = 'ImageProcessing'>Image Processing</b></a>
+Image preparation and processing is an important part when training a convolutional neural network. The following tasks are carried out to prepare the raw RGB sign language image: 
 
+1. Loading *.jpg* images using [Python Pillow library](https://pypi.org/project/Pillow/) (PIL)
+
+2. Converting images to Numpy array: 
+We need to first convert RGB images into 3d arrays with [height, width, channel] dimentions. Numpy vectorized-images are the main format we impliment operations in machine learning and neural networks. Loaded images by Pillow library are converted to matrices in this step using `numpy.asarray` tool.   
+
+
+3. Resizing/downscaling the images: The vectorized image arrays have 200 by 200 dimentions and 3 RGB channels (Red, Green, Blue). Since the background image is roughly distinctive from the sign alphabet, these dimentional looks overwholming and increase the computational time dramatically. In addition, 1 channel would be sufficient for neural networks to identify the alphabet and classify them. Hence, [scikit-image](https://scikit-image.org/docs/stable/auto_examples/transform/plot_rescale.html) library tool (skimage.transform.resize) is utilized to reduce the image arrays. 
+
+All these image processing tools are embedded into the following function in the main code:
+
+`def read_npArray_resize_image(image_path, x_pixel, y_pixel): \
+
+    return skimage.transform.resize(np.asarray(Image.open(image_path)), (x_pixel, y_pixel, 1))`
+
+--- 
 
 # <a id = 'CNNs'>Convolutional Neural Networks (CNNs)</b></a>
 
