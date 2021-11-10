@@ -41,6 +41,52 @@ Different features of CNNs architectures such as filters, hidden layers, and num
     - [References](#references)
 
 
+
+---
+# <a id = 'RepoStructure'> Repo Structure </b></a>
+## notebooks/ <br />
+
+*Setp 1: Image Processing:*\
+&nbsp; &nbsp; &nbsp; __ [1__data-collectionPrepPandemic.ipynb](notebooks/1__data-collectionPrepPandemic.ipynb)<br />
+
+*Setp 2: Exploratory Data Analysis:*\
+&nbsp; &nbsp; &nbsp; __ [3__ExploratoryDataAnalysis_EDA.ipynb](notebooks/3__ExploratoryDataAnalysis_EDA.ipynb)<br />
+
+*Setp 3: CNNs Models: Classifiers*\
+&nbsp; &nbsp; &nbsp; __ [4-7__model_Adaboost.ipynb](notebooks/4-7__model_Adaboost.ipynb)<br />
+
+## datasets/<br />
+*Processed/Vectorized/Resized Images from sub Reddits:*\
+&nbsp; &nbsp; &nbsp; __ [preprocessed_covid19positive_reddit_LAST.csv](datasets/preprocessed_covid19positive_reddit_LAST.csv)<br />
+
+## output/<br />
+*Stored CNNs model:*\
+&nbsp; &nbsp; &nbsp; __ [preprocessed_covid19positive_reddit_LAST.csv](datasets/preprocessed_covid19positive_reddit_LAST.csv)<br />
+
+
+
+[presentation.pdf](presentation.pdf)<br />
+
+[ReadMe.md](ReadMe.md)<br />
+
+---
+---
+# <a id = 'ddict'>Data <b>Dictionary</b></a>
+
+
+|feature name|data type|Description|
+|---|---|---|
+| selftext |*object*|Original Reddit posts with no text processing|
+| subreddit|*object*|Subreddit category: r\Covid19Positive and r\PandemicPreps|
+| created_utc|*int64*|Reddit posting date|
+| author|*object*|Author ID|
+| num_comments|*int64*|Number of comments/reply to that post|
+| post|*object*| Reddit post after text precessing with normal/unstemmed words|
+| token|*object*| Reddit post after text precessing with word stemming|
+
+---
+
+
 # <a id = 'ImageProcessing'>Image Processing</b></a>
 
 
