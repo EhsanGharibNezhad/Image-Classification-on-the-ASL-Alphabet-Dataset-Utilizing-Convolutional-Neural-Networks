@@ -28,16 +28,36 @@ Different features of CNNs architectures such as filters, hidden layers, and num
 
     - [Data Dictionary](#ddict)
     - [Background](#Background)
-    - [1. Data Scarpping: Application Programming Interface](#api)
-   	- [2. Text Normalization](#Text_Normalization)
-    	- [2.1. Tokenization](#Tokenization)
-    	- [2.2. Lemmatization](#Lemmatization)
-    	- [2.3. Stemming](#Stemming)
+    - [1. Image Processing](#ImageProcessing)
+   	- [2. Convolutional Neural Networks (CNNs)](#CNNs)
+    	- [X](#X)
+    	- [Y](#Y)
     - [Methodology](#Methodology)    
-    	- [Sentiment Analysis](#Sentiment)	
+    	- [Sign Language Classifier](#SignLanguageClassifier)	
     - [Exploratory Data Analysis](#eda)    
     - [Results](#Results)    
     - [Conclusion](#Conclusion)
     - [Recommendations](#Recommendations)
     - [References](#references)
 
+
+# <a id = 'ImageProcessing'>Image Processing</b></a>
+
+
+# <a id = 'CNNs'>Convolutional Neural Networks (CNNs)</b></a>
+
+### 1. <a id = 'X'>X</b></a>
+
+### 2. <a id = 'Y'>Y</b></a>
+
+
+# <a id = 'SignLanguageClassifier'>Sign Language Classifier</b></a>
+
+
+# <a id = 'ExploratoryDataAnalysis'>Exploratory Data Analysis</b></a>
+
+
+# <a id = 'Results'>Results</b></a>
+
+
+# <a id = 'Conclusion'>Conclusion</b></a>
