@@ -10,7 +10,6 @@
     <img src="https://i.stack.imgur.com/tskMh.png" alt="github"> Github
   </a>
 </p>
----
 
 <br></br>
 # <a id = 'ProblemStatement'>Problem Statement</b></a>
@@ -19,3 +18,26 @@ American Sign Language (ASL) is the primary mean of communication of people with
 Different features of CNNs architectures such as filters, hidden layers, and number of nurons are assessed in order to leverage the accuracy and F1-score metrics. The trained CNNs model recongize the train and test subsets with >98% of accuracy. 
 
 ---
+
+<br></br>
+# <a id = 'Content'> Content </b></a>
+
+- [Problem Statement](#ProblemStatement)
+- [Content](#Content)    
+- [Repo Structure](#RepoStructure)    
+
+    - [Data Dictionary](#ddict)
+    - [Background](#Background)
+    - [1. Data Scarpping: Application Programming Interface](#api)
+   	- [2. Text Normalization](#Text_Normalization)
+    	- [2.1. Tokenization](#Tokenization)
+    	- [2.2. Lemmatization](#Lemmatization)
+    	- [2.3. Stemming](#Stemming)
+    - [Methodology](#Methodology)    
+    	- [Sentiment Analysis](#Sentiment)	
+    - [Exploratory Data Analysis](#eda)    
+    - [Results](#Results)    
+    - [Conclusion](#Conclusion)
+    - [Recommendations](#Recommendations)
+    - [References](#references)
+
