@@ -105,7 +105,8 @@ All these image processing tools are embedded into the following function in the
 
 ![image](https://user-images.githubusercontent.com/22139918/141359354-83aece64-5cc6-449d-9985-ea4ecbc29f72.png)
 
-![image](https://user-images.githubusercontent.com/22139918/141355298-8c9e9d70-719b-4a78-b20f-3d0150f60808.png)
+![image](https://user-images.githubusercontent.com/22139918/141365776-473bee30-5565-4eef-9532-d7971682a5df.png)
+
 
 ## <a id = 'CNNs'>Convolutional Neural Networks (CNNs/ConvNets)</b></a>
 
@@ -113,9 +114,12 @@ All these image processing tools are embedded into the following function in the
 
 <img width="1145" alt="image" src="https://user-images.githubusercontent.com/22139918/141344082-d075edfe-4160-4806-9c66-fc2d298e00d1.png">
 
+In the following, the general script for the build CNNs is represented which includes 2 hidden layers (with 384 and 128 neurons). In addition, one 2D convolutional layer with 6 filters (3x3 kernel) is included. MaxPooling2D and Padding operations are tested but did not show significat impact. 
+
+
 ![image](https://user-images.githubusercontent.com/22139918/141359111-1d4a72d6-733f-4e66-9c55-5b2299a1dadd.png)
 
-
+---
 # <a id = 'Results'>Results</b></a>
 
 
