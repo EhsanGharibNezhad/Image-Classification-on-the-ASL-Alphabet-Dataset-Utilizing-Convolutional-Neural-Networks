@@ -104,6 +104,7 @@ All these image processing tools are embedded into the following function in the
 
 <img width="1118" alt="image" src="https://user-images.githubusercontent.com/22139918/141200677-f5744261-b05a-4846-aacc-23a4bd45b080.png">
 
+![image](https://user-images.githubusercontent.com/22139918/141347858-ad87fc39-6483-4f30-8b46-e97f979ab767.png)
 
 --- 
 
@@ -115,7 +116,7 @@ All these image processing tools are embedded into the following function in the
 **Feedforward Neural Networks (FNNs):** In a regular neural network, a certain amount of input data is fed to the neurons in the input layer and then the information iterate through the neural network in forward and backward directions in an attempt to better train the neurons to reduce the loss function. However, this method is not specilized to learn from images and could takes a long time to be completed. In case of image dataset, each input in this project has 60x60x1=3,600 (with,length, 1 color channel) length. This array of data from the whole set of the training images looks overkilling and requires a very long computational time to be managed when it goes into a single neuron. Given the multiple hidden layers and large number of neurons in each layer, regual neural network would not be a great choice to feed the data with and gain a high accuracy score.    
 
 
-**Convolutional Neural Networks (CNNs/ConvNets):** Compared to the the regular FNNs archetature, CNNs has extra layers to apply further processing to the input images through Convolution operator, Maxpooling, and Padding. The central idea of the convolution layers is to extract the importnat features from the image and simplify them (or downscale) them. Convolution layer consists of a set of filters that take the original image and convolve them the the kernel. The following figure shows the impact of the applying 3x3 kernel filter (left), 2x2 Max Pooling (middle), and 3x3 Max Pooling (right) on a 2D vectorized image. 
+**Convolutional Neural Networks (CNNs/ConvNets):** Compared to the the regular FNNs archetature, CNNs has extra layers to apply further processing to the input images through Convolution operator, Maxpooling, and Padding. The central idea of the convolution layers is to extract the importnat features from the image and simplify them (or downscale) them. Convolution layer consists of a set of filters that take the original image and convolve them the the kernel. The following figure shows the impact of the applying 3x3 kernel filter (left), 2x2 Max Pooling (middle), and 3x3 Max Pooling (right) on a 2D vectorized image ([[Fig credit]](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)). 
 
 <img width="1145" alt="image" src="https://user-images.githubusercontent.com/22139918/141344082-d075edfe-4160-4806-9c66-fc2d298e00d1.png">
 
