@@ -57,7 +57,7 @@ Different features of CNNs architectures such as filters, hidden layers, and num
 &nbsp; &nbsp; &nbsp; __ [cnns_model.json](outputs/cnns_model.json)<br />
 
 
-[ReadMe.md](ReadMe.md)<br />
+[README.md](README.md)<br />
 
 
 ---
