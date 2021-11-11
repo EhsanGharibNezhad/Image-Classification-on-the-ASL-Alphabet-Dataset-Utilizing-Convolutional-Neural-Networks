@@ -14,8 +14,7 @@
 <br></br>
 # <a id = 'ProblemStatement'>Problem Statement</b></a>
 
-American Sign Language (ASL) is the primary mean of communication of people with hearing disabilities and it plays a crucial role in the Deaf community in the north America. Hence, recognition of ASL with computer algorithims is a continoius effort and challenge in the field of machine learning due to its complexity. In this project, more than 11,000 images of all ASL alphabets are preccessed, vectorized, and resized using Pillow, Numpy, and sklearn libraries. Then, Convolutional Neural Networks (CNNs) is build and trained using all these processed images. 
-Different features of CNNs architectures such as filters, hidden layers, and number of nurons are assessed in order to leverage the accuracy and F1-score metrics. The trained CNNs model recongize the train and test subsets with >98% of accuracy. 
+American Sign Language (ASL) is the primary mean of communication of people with hearing disabilities and it plays a crucial role in the Deaf community in North America. Hence, recognition of ASL with computer algorithms is a continuous effort and challenge in the field of machine learning due to its complexity. In this project, more than 11,000 images of all ASL alphabets are precessed, vectorized, and resized using Pillow, Numpy, and sklearn libraries. Then, Convolutional Neural Networks (CNNs) are built and trained using all these processed images. Different features of CNNs architectures such as filters, hidden layers, and several neurons are assessed to leverage the accuracy and F1-score metrics. The trained CNNs model recognizes the train and test subsets with >98% of accuracy.
 
 ---
 
@@ -71,10 +70,10 @@ Image preparation and processing is an important part when training a convolutio
 1. Loading *.jpg* images using [Python Pillow library](https://pypi.org/project/Pillow/) (PIL)
 
 2. Converting images to Numpy array: 
-We need to first convert RGB images into 3d arrays with [height, width, channel] dimentions. Numpy vectorized-images are the main format we impliment operations in machine learning and neural networks. Loaded images by Pillow library are converted to matrices in this step using *numpy.asarray* tool.   
+We need to first convert RGB images into 3d arrays with [height, width, channel] dimensions. Numpy vectorized images are the main format we implement operations in machine learning and neural networks. Loaded images by the Pillow library are converted to matrices in this step using *numpy.asarray* tool.      
 
 
-3. Resizing/downscaling the images: The vectorized image arrays have 200 by 200 dimentions and 3 RGB channels (Red, Green, Blue). Since the background image is roughly distinctive from the sign alphabet, these dimentional looks overwholming and increase the computational time dramatically. In addition, 1 channel would be sufficient for neural networks to identify the alphabet and classify them. Hence, [scikit-image](https://scikit-image.org/docs/stable/auto_examples/transform/plot_rescale.html) library tool (*skimage.transform.resize*) is utilized to reduce the image arrays. 
+3. Resizing/downscaling the images: The vectorized image arrays have 200 by 200 dimensions and 3 RGB channels (Red, Green, Blue). Since the background image is roughly distinctive from the sign alphabet, these dimensional look overwhelming and increase the computational time dramatically. In addition, 1 channel would be sufficient for neural networks to identify the alphabet and classify them. Hence, [scikit-image](https://scikit-image.org/docs/stable/auto_examples/transform/plot_rescale.html) library tool (*skimage.transform.resize*) is utilized to reduce the image arrays. 
 
 All these image processing tools are embedded into the following function in the main code:
 
