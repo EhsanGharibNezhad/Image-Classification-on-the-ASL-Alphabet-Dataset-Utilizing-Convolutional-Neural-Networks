@@ -103,7 +103,7 @@ All these image processing tools are embedded into the following function in the
 
 **Feedforward Neural Networks (FNNs):** In a regular neural network, a certain amount of input data is fed to the neurons in the input layer and then the information iterate through the neural network in forward and backward directions in an attempt to better train the neurons to reduce the loss function. However, this method is not specilized to learn from images and could takes a long time to be completed. In case of image dataset, each input in this project has 60x60x1=3,600 (with,length, 1 color channel) length. This array of data from the whole set of the training images looks overkilling and requires a very long computational time to be managed when it goes into a single neuron. Given the multiple hidden layers and large number of neurons in each layer, regual neural network would not be a great choice to feed the data with and gain a high accuracy score.    
 
-![image](https://user-images.githubusercontent.com/22139918/141350782-6d2a5900-b6c1-44d5-aa1b-b141799f5697.png)
+![image](https://user-images.githubusercontent.com/22139918/141359354-83aece64-5cc6-449d-9985-ea4ecbc29f72.png)
 
 ![image](https://user-images.githubusercontent.com/22139918/141355298-8c9e9d70-719b-4a78-b20f-3d0150f60808.png)
 
@@ -113,11 +113,9 @@ All these image processing tools are embedded into the following function in the
 
 <img width="1145" alt="image" src="https://user-images.githubusercontent.com/22139918/141344082-d075edfe-4160-4806-9c66-fc2d298e00d1.png">
 
-![image](https://user-images.githubusercontent.com/22139918/141350957-2189df00-8214-4b7a-a2ac-1cf823596b19.png)
-
+![image](https://user-images.githubusercontent.com/22139918/141359111-1d4a72d6-733f-4e66-9c55-5b2299a1dadd.png)
 
 # <a id = 'ExploratoryDataAnalysis'>Exploratory Data Analysis</b></a>
-
 
 # <a id = 'Results'>Results</b></a>
 
