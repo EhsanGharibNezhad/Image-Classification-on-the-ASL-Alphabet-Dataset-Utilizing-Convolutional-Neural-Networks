@@ -29,12 +29,10 @@ Different features of CNNs architectures such as filters, hidden layers, and num
     - [Data Dictionary](#ddict)
     - [Background](#Background)
     - [1. Image Processing](#ImageProcessing)
-   	- [2. Convolutional Neural Networks (CNNs)](#CNNs)
-    	- [X](#X)
-    	- [Y](#Y)
-    - [Methodology](#Methodology)    
-    	- [Sign Language Classifier](#SignLanguageClassifier)	
-    - [Exploratory Data Analysis](#eda)    
+   	- [2. Methodology](#Methodology)
+    	- [2.1 Overview](#Overview)
+    	- [2.2 Feedforward Neural Networks (FNNs)](#FNNs)
+    	- [2.3 Convolutional Neural Networks (CNNs/ConvNets)](#CNNs)
     - [Results](#Results)    
     - [Conclusion](#Conclusion)
     - [Recommendations](#Recommendations)
@@ -69,20 +67,6 @@ Different features of CNNs architectures such as filters, hidden layers, and num
 
 [ReadMe.md](ReadMe.md)<br />
 
----
----
-# <a id = 'ddict'>Data <b>Dictionary</b></a>
-
-
-|feature name|data type|Description|
-|---|---|---|
-| selftext |*object*|Original Reddit posts with no text processing|
-| subreddit|*object*|Subreddit category: r\Covid19Positive and r\PandemicPreps|
-| created_utc|*int64*|Reddit posting date|
-| author|*object*|Author ID|
-| num_comments|*int64*|Number of comments/reply to that post|
-| post|*object*| Reddit post after text precessing with normal/unstemmed words|
-| token|*object*| Reddit post after text precessing with word stemming|
 
 ---
 
@@ -108,20 +92,28 @@ All these image processing tools are embedded into the following function in the
 
 --- 
 
-# <a id = 'CNNs'>Convolutional Neural Networks (CNNs)</b></a>
+# <a id = 'Methodology'>Methodology</b></a>
+
+## <a id = 'Overview'>Overview</b></a>
 
 **Archetacture Overview:** Convolutional Neural Networks consists of a number of neurons that are fed with input vectorized and resized image data, and includes weights and biases.  Neurons are trainable and learnable because each of them performs a non-linear operation on the input arrays through ReLU function [[Ref]](https://cs231n.github.io/convolutional-networks/#overview). ReLU (Rectified Linear Unit) is ideal for this deep learning purpose because Rectified Linear Unit takes less comutational time to be trained and hence this will reduce the optimization time of the neural network in the gradient descent surface [[Ref]](https://www.mygreatlearning.com/blog/relu-activation-function/). The overal score of the neural network then can be expressed with a single metric: Loss fuction [[Ref]](https://towardsdatascience.com/understanding-different-loss-functions-for-neural-networks-dd1ed0274718).
 
 
+## <a id = 'FNNs'>Feedforward Neural Networks (FNNs)</b></a>
+
 **Feedforward Neural Networks (FNNs):** In a regular neural network, a certain amount of input data is fed to the neurons in the input layer and then the information iterate through the neural network in forward and backward directions in an attempt to better train the neurons to reduce the loss function. However, this method is not specilized to learn from images and could takes a long time to be completed. In case of image dataset, each input in this project has 60x60x1=3,600 (with,length, 1 color channel) length. This array of data from the whole set of the training images looks overkilling and requires a very long computational time to be managed when it goes into a single neuron. Given the multiple hidden layers and large number of neurons in each layer, regual neural network would not be a great choice to feed the data with and gain a high accuracy score.    
 
+![image](https://user-images.githubusercontent.com/22139918/141350782-6d2a5900-b6c1-44d5-aa1b-b141799f5697.png)
+
+![image](https://user-images.githubusercontent.com/22139918/141355298-8c9e9d70-719b-4a78-b20f-3d0150f60808.png)
+
+## <a id = 'CNNs'>Convolutional Neural Networks (CNNs/ConvNets)</b></a>
 
 **Convolutional Neural Networks (CNNs/ConvNets):** Compared to the the regular FNNs archetature, CNNs has extra layers to apply further processing to the input images through Convolution operator, Maxpooling, and Padding. The central idea of the convolution layers is to extract the importnat features from the image and simplify them (or downscale) them. Convolution layer consists of a set of filters that take the original image and convolve them the the kernel. The following figure shows the impact of the applying 3x3 kernel filter (left), 2x2 Max Pooling (middle), and 3x3 Max Pooling (right) on a 2D vectorized image ([[Fig credit]](https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53)). 
 
 <img width="1145" alt="image" src="https://user-images.githubusercontent.com/22139918/141344082-d075edfe-4160-4806-9c66-fc2d298e00d1.png">
 
-
-# <a id = 'SignLanguageClassifier'>Sign Language Classifier</b></a>
+![image](https://user-images.githubusercontent.com/22139918/141350957-2189df00-8214-4b7a-a2ac-1cf823596b19.png)
 
 
 # <a id = 'ExploratoryDataAnalysis'>Exploratory Data Analysis</b></a>
