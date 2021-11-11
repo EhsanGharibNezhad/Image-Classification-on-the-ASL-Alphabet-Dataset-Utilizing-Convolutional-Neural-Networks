@@ -44,26 +44,18 @@ Different features of CNNs architectures such as filters, hidden layers, and num
 # <a id = 'RepoStructure'> Repo Structure </b></a>
 ## notebooks/ <br />
 
-*Setp 1: Image Processing:*\
-&nbsp; &nbsp; &nbsp; __ [1__data-collectionPrepPandemic.ipynb](notebooks/1__data-collectionPrepPandemic.ipynb)<br />
-
-*Setp 2: Exploratory Data Analysis:*\
-&nbsp; &nbsp; &nbsp; __ [3__ExploratoryDataAnalysis_EDA.ipynb](notebooks/3__ExploratoryDataAnalysis_EDA.ipynb)<br />
-
-*Setp 3: CNNs Models: Classifiers*\
-&nbsp; &nbsp; &nbsp; __ [4-7__model_Adaboost.ipynb](notebooks/4-7__model_Adaboost.ipynb)<br />
+*Image Processing and models:*\
+&nbsp; &nbsp; &nbsp; __ [image_processing_NeuralNetwork_modeling.ipynb](notebooks/image_processing_NeuralNetwork_modeling.ipynb)<br />
 
 ## datasets/<br />
 *Processed/Vectorized/Resized Images from sub Reddits:*\
 &nbsp; &nbsp; &nbsp; __ [preprocessed_covid19positive_reddit_LAST.csv](datasets/preprocessed_covid19positive_reddit_LAST.csv)<br />
 
-## output/<br />
+## outputs/<br />
 *Stored CNNs model:*\
-&nbsp; &nbsp; &nbsp; __ [preprocessed_covid19positive_reddit_LAST.csv](datasets/preprocessed_covid19positive_reddit_LAST.csv)<br />
+&nbsp; &nbsp; &nbsp; __ [cnns_model.h5](outputs/cnns_model.h5)<br />
+&nbsp; &nbsp; &nbsp; __ [cnns_model.json](outputs/cnns_model.json)<br />
 
-
-
-[presentation.pdf](presentation.pdf)<br />
 
 [ReadMe.md](ReadMe.md)<br />
 
