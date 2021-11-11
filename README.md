@@ -119,8 +119,15 @@ In the following, the general script for the build CNNs is represented which inc
 
 ![image](https://user-images.githubusercontent.com/22139918/141359111-1d4a72d6-733f-4e66-9c55-5b2299a1dadd.png)
 
+![image](https://user-images.githubusercontent.com/22139918/141367817-65a08986-68e4-42a8-9d0a-3b53e6b6df6c.png)
+
+
 ---
-# <a id = 'Results'>Results</b></a>
+# <a id = 'Results'>Classification Results from CNNs model</b></a>
+
+![image](https://user-images.githubusercontent.com/22139918/141369073-09ccdcd2-f85d-4025-8463-5fbe6e92bc84.png)
 
 
-# <a id = 'Conclusion'>Conclusion</b></a>
+![image](https://user-images.githubusercontent.com/22139918/141369000-30658295-7803-4372-a493-f88429d7b0b0.png)
+
+
