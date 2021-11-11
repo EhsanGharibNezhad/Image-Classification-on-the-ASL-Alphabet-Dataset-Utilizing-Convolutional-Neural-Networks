@@ -115,7 +115,6 @@ All these image processing tools are embedded into the following function in the
 
 ![image](https://user-images.githubusercontent.com/22139918/141359111-1d4a72d6-733f-4e66-9c55-5b2299a1dadd.png)
 
-# <a id = 'ExploratoryDataAnalysis'>Exploratory Data Analysis</b></a>
 
 # <a id = 'Results'>Results</b></a>
 
